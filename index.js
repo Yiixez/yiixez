@@ -39,7 +39,7 @@ if(userMap.has(message.author.id)) {
     else {
      ++msgCount;
     if(parseInt(msgCount) === LIMIT) {
-      const role = message.guild.roles.cache.get('712317311758893056');
+      const role = message.guild.roles.cache.get('712684407894310993');
       message.member.roles.add(role);
       message.channel.send(message.author.username + ' Has been muted.');
       setTimeout(() => {
