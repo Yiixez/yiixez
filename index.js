@@ -18,9 +18,6 @@ const LIMIT = 5;
 const TIME = 5000;
 const DIFF = 2500;
 
-
-
-
 bot.on('message', message => {
 if(message.author.bot) return;
 if(userMap.has(message.author.id)) {
