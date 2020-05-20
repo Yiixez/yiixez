@@ -39,11 +39,11 @@ bot.on('message', message => {
   else {
     ++msgCount;
     if(parseInt(msgCount) === LIMIT) {
-      const role = msesage.guild.roles.cache.get('712377210522304533');
+      const role = msesage.guild.Roles.cache.get('712377210522304533');
       message.member.roles.add(role);
       message.channel.send(message.author.username + ' Has been muted');
       setTimeout(() => {
-        mesasge.member.roles.remove(role);
+        mesasge.member.Roles.remove(role);
         message.channel.send(message.author.username + ' Has been unmuted');
      }, TIME);
   } else {
